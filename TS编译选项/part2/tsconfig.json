@@ -5,5 +5,53 @@
     "include": ["./**/*"] , //*————任意文件  **————任意目录
 
     //用来指定哪些文件不需要被编译
-    "exclude": ["./main/**/*"]
+    "exclude": ["./main/**/*"],
+
+    //编译器选项
+    "compilerOptions": {
+        //用来指定ts被编译为的es版本
+        "target": "ES6",
+
+        //指定我们要使用的模块化的规范
+        "module": "ES2015",
+
+        //指定项目中需要使用的库     ---------      一般不需要配置
+        //  "lib": ["DOM"]
+
+        //指定我们编译后文件所在的目录  输出目录
+        "outDir": "./dist",
+
+        //输出的文件 所有的迪马都会合并到同一个文件中
+        // "outFile": "./dist/main.js"
+
+        //是否对js文件进行编译 默认是false
+        "allowJs": true,
+
+        //是否检查js代码是个否符合语法规范 默认是false
+        "checkJs": false,
+
+        //是否移除注释 默认false
+        "removeComments": false,
+
+        //不生成编译后的文件  默认false
+        "noEmit": false,
+
+        //当有错误时不生产编译后文件 默认false
+        "noEmitOnError": true,
+
+        //严格检查的总开关
+        "strict": true,
+
+        //严格模式 默认false
+        "alwaysStrict": true,
+
+        //是否不允许隐式any类型
+        "noImplicitAny": false,
+
+        //是否允许不明确类型的this
+        "noImplicitThis": true,
+
+        //严格检查空值
+        "strictNullChecks": true
+    }
 }
