@@ -1,4 +1,3 @@
-"use strict";
 //abstract 开头的类是抽象类 不能用来创建对象
 //专门用来被继承的类
 //抽象类中可以创建抽象方法
@@ -26,3 +25,4 @@ class Dog extends Animal {
 }
 const dog = new Dog('旺财', 45);
 dog.sayHello();
+export {};

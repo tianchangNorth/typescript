@@ -34,3 +34,4 @@ class Dog extends Animal{
 }
 const dog = new Dog('旺财',45)
 dog.sayHello()
+export{ }
