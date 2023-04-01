@@ -1,4 +1,3 @@
-"use strict";
 const obj = {
     name: '张三',
     age: 11,
@@ -15,3 +14,4 @@ class MyClass {
         this.name = name;
     }
 }
+export {};

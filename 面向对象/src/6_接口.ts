@@ -44,3 +44,4 @@ class MyClass implements myInter{
     }
 
 }
+export {}
